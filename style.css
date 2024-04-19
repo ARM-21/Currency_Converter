@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to right,rgb(218, 218, 154),#fff);
+}
+.container{
+    border:2px solid #fff;
+    height:20rem;
+    border-radius:20px;
+    box-shadow: 0 0 10px #6b5f5f;
+}
+.amount-container{
+    margin-top:1rem;
+}
+.amount-container label{
+    font-size: 20px;
+   
+    width:17rem;
+    margin:0px auto;
+}
+.amount-container input{
+    border:none;
+    display: inline-block;
+    width:10rem;
+    height:2rem;
+    margin:0px auto;
+    
+}
+.change-container {
+    margin-top: 1.5rem;
+    padding: 0px 20px;
+}
+.container h2 {
+    margin:0px auto;
+    width:14rem;
+}
+.amount-container{
+    display:flex;
+    flex-direction: column;
+}
+.change-container{
+    width:20rem;
+    display: flex;
+    
+justify-content: space-between;
+align-items: center;
+}
+.change-container .exchange-img .fa-solid{
+    margin-top:19px;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-container img{
+    height:2rem;
+    width:2rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form button{
+    justify-self: center;
+    width:150px;
+    margin-top:1rem;
+}
+.msg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg{
+    width:14rem;
+    align-self: center;    
+    margin: 20px auto;                                                                                                          
+    font-weight: bolder;
+    font-size: 15px;
+    color:rgb(228, 37, 37);
+    display: flex;
+    justify-content: center;
+}

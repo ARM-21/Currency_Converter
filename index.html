@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount-container">
+                <label for="amount" class="enterAmount" autofocus >Enter Amount</label>
+                <input type="number" id="amount" placeholder="Enter your Amount"
+                    style="padding-left: 1rem; border-radius: 10px; width:16rem">
+            </div>
+            <div class="change-container">
+                <div class="dropdown">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/NP/shiny/64.png">
+                        <select name="From" class="from">
+
+                        </select>
+
+                    </div>
+                </div>
+                <div class="exchange-img">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                </div>
+                <div class="dropdown">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/shiny/64.png">
+                        <select name="To" class="to">
+
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+            <button>Get Exchange-Rate</button>
+        </form>
+        <div class="msg2">
+            <p class="msg">1 NPR = 0.62 INR</p>
+            
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a308385d4d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

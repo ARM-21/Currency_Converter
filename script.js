@@ -1,3 +1,10 @@
+async function getData(){
+let data = await fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/npr.json`)
+let data2 = await data.json()
+console.log(data2['npr']['inr']);
+
+}
+getData()
 const countryList = {
   AED: "AE",
   AFN: "AF",
@@ -204,15 +211,16 @@ exchngButton.addEventListener("click", async (evt) => {
   }
   let num1 = from.value;
   let str1 = num1.toString();
-  console.log(str1);
+  // console.log(str1);
   let num2 = to.value;
   let str2 = num2.toString();
 
-  let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${str1.toLowerCase()}/${str2.toLowerCase()}.json`;
+  let url =` https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${str1.toLowerCase()}.json`;
   let response = await fetch(url);
   let data = await response.json();
   let str = str2.toLowerCase();
-  let exchngRate = data[str];
+  console.log(str)
+  let exchngRate = data[str1.toLowerCase()][str];
   console.log(typeof(amountVal.value));
   
   let totalAmnt = parseFloat(exchngRate).toFixed(3) * amnt;
